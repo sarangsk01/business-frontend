@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import VisitorCount from './VisitorCount';
 
 export default function Footers() {
   const [news, setNews] = useState({
@@ -43,7 +44,7 @@ export default function Footers() {
           <div className="container flex itop justify-between wrap">
             <div className="nav">
               <a className="logo" href="/">
-                SSK
+                Pension-ez.com
               </a>
               <div className="padding-10">
                 <address>
@@ -53,7 +54,15 @@ export default function Footers() {
               </div>
               <div className="">
                 <address>
-                  <strong>ईमेल:sudhirkulkarni111@gmail.com</strong>
+                  <strong
+                    style={{
+                      color: 'var(--heading)',
+                      fontSize: '1.5rem',
+                      fontFamily: 'Poppins',
+                    }}
+                  >
+                    ईमेल:sudhirkulkarni111@gmail.com
+                  </strong>
                 </address>
                 <address>{/* <strong>फोन:</strong> */}</address>
               </div>
@@ -137,17 +146,31 @@ export default function Footers() {
               </fieldset>
             </form>
           </div>
-          <div></div>
+          <div
+            style={{
+              margin: '1rem 0 0 0  ',
+            }}
+          >
+            <VisitorCount />
+          </div>
         </section>
         <section className="copyright">
           <div className="container flex items-center justify-between wrap">
             <small className="mobile-100">
               कॉपीराईट{' '}
-              <span style={{ color: 'var(--heading)', fontSize: '1.5rem' }}>
+              <span
+                style={{
+                  color: 'var(--heading)',
+                  fontSize: '1.5rem',
+                  fontFamily: 'Poppins',
+                }}
+              >
                 &copy; 2023
               </span>{' '}
-              <strong style={{ color: 'var(--heading)' }}>SSK Pension</strong>.
-              सर्व हक्क सुरक्षित. <br /> संकेतस्थळ विकासक{' '}
+              <strong style={{ color: 'var(--heading)' }}>
+                Pension-ez.com
+              </strong>
+              . सर्व हक्क सुरक्षित. <br /> संकेतस्थळ विकासक{' '}
               <span style={{ color: 'var(--accent)', fontWeight: '600' }}>
                 सारंग कुलकर्णी
               </span>

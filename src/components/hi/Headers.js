@@ -4,7 +4,27 @@ export default function Headers() {
     <header className="header">
       <div className="container flex items-center justify-between">
         <a href="/" className="logo">
-          SSK Pension
+          Pension
+          <strong
+            style={{
+              color: 'var(--txt)',
+              fontSize: '2.8rem',
+              fontWeight: '800',
+            }}
+          >
+            -ez.
+          </strong>
+          <strong
+            style={{
+              backgroundColor: 'var(--darktxt)',
+              color: 'var(--white)',
+              fontSize: '2.8rem',
+              fontWeight: '800',
+            }}
+          >
+            com
+          </strong>
+          <span></span>
         </a>
         <label className="bars" htmlFor="toggle">
           <i className="fas fa-bars"></i>
