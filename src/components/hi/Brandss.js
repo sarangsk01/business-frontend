@@ -26,9 +26,12 @@ export default function Brandss() {
             <td colSpan="1">
               <ul>
                 <li>
-                  <a href="/images/">
+                  <a
+                    href="/images/थकीत देयके ऑफलाईनGR.pdf"
+                    style={{ color: 'var(--darktxt)' }}
+                  >
                     <span />
-                    ....
+                    थकीत देयके ऑफलाईन-GR
                   </a>
                   <img
                     className="margin-10 flex-center"
