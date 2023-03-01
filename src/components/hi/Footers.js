@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import VisitorCount from './VisitorCount';
+// import VisitorCount from './VisitorCount';
 
 export default function Footers() {
   const [news, setNews] = useState({
@@ -151,7 +151,7 @@ export default function Footers() {
               margin: '1rem 0 0 0  ',
             }}
           >
-            <VisitorCount />
+            {/* <VisitorCount /> */}
           </div>
         </section>
         <section className="copyright">

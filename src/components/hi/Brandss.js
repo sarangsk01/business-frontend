@@ -47,12 +47,17 @@ export default function Brandss() {
             <td colSpan="1">
               <ul>
                 <li>
-                  <a href="/logo192.png">
+                  <a
+                    href="/images/D.A.Difference Statement.xlsx"
+                    style={{ color: 'var(--darktxt)' }}
+                  >
                     <span />
+                    सर्व शाळा यांनी हा डी.ए. फरक तक्ता वापरावा.
                   </a>
                   <img
                     className="margin-10 flex-center"
                     width="40"
+                    src="https://www.aryagroupbly.in/wp-content/uploads/2020/05/new-gif.gif"
                     alt=""
                   ></img>
                 </li>
