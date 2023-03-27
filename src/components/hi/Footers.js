@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import VisitorCount from './VisitorCount';
-import { BASE_URL } from './helper';
+// import { BASE_URL } from './helper';
 
 export default function Footers() {
   const [news, setNews] = useState({
@@ -20,7 +20,7 @@ export default function Footers() {
 
     const { email } = news;
 
-    const res = await fetch(`${BASE_URL}/users/newsletter`, {
+    const res = await fetch(`/users/newsletter`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
