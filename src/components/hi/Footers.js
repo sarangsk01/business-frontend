@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import VisitorCount from './VisitorCount';
-import { BASE_URL } from './helper';
+import { BASE_URL } from './Helper';
 
 export default function Footers() {
   const [news, setNews] = useState({
