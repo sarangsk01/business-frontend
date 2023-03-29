@@ -25,11 +25,7 @@ export default function Contacts() {
 
     const res = await fetch(`${BASE_URL}/users`, {
       method: 'POST',
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'GET, POST, OPTION',
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         name,
         mobile,
@@ -38,7 +34,15 @@ export default function Contacts() {
         message,
       }),
     });
-    const data = await res.json();
+    const data = await res.json().then((data) => ({
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, OPTION',
+        'Content-Type': 'application/json',
+      },
+      statusCode: 200,
+      body: data.business,
+    }));
     console.log(data);
     if (!name || !mobile || !email || !subject || !message) {
       window.alert('कृपया सर्व माहिती प्रविष्ट करा.');

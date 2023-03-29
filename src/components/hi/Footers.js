@@ -22,16 +22,20 @@ export default function Footers() {
 
     const res = await fetch(`${BASE_URL}/users/newsletter`, {
       method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email,
+      }),
+    });
+    const data = await res.json().then((data) => ({
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET, POST, OPTION',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        email,
-      }),
-    });
-    const data = await res.json();
+      statusCode: 200,
+      body: data.business,
+    }));
     console.log(data);
 
     if (!email) {
