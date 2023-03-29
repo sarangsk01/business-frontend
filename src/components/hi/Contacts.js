@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BASE_URL } from './Helper';
+// import { BASE_URL } from './Helper';
 
 export default function Contacts() {
   const [user, setUser] = useState({
@@ -23,7 +23,7 @@ export default function Contacts() {
 
     const { name, mobile, email, subject, message } = user;
 
-    const res = await fetch(`${BASE_URL}/users`, {
+    const res = await fetch('/users', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
