@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BASE_URL } from './Helper';
+import { BASE_URL } from '../data/Helper';
 
 export default function Contacts() {
   const [user, setUser] = useState({
