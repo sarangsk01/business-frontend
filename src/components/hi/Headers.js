@@ -22,7 +22,7 @@ export default function Headers() {
               fontWeight: '800',
             }}
           >
-            com
+            netlify.app
           </strong>
           <span></span>
         </a>
