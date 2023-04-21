@@ -53,7 +53,7 @@ export default function Footers() {
           <div className="container flex itop justify-between wrap">
             <div className="nav">
               <a className="logo" href="/">
-                Pension-ez.com
+                Pension-ez.netlify.app
               </a>
               <div className="padding-10">
                 <address>
@@ -177,7 +177,7 @@ export default function Footers() {
                 &copy; 2023
               </span>{' '}
               <strong style={{ color: 'var(--heading)' }}>
-                Pension-ez.com
+                Pension-ez.netlify.app
               </strong>
               . सर्व हक्क सुरक्षित. <br /> संकेतस्थळ विकासक{' '}
               <span style={{ color: 'var(--accent)', fontWeight: '600' }}>
